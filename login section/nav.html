@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="homepage.css" >
+    <title>Glamify Page</title>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <h3>Free delivery for orders above Rs. 799</h3>
+        </div>
+    </header>
+    <navbar id="navbar">
+        <div id="main">
+            <!-- Logo -->
+            <div id="logo">
+                <img id="img" src="C:\Users\navne\OneDrive\Desktop\glamify_proj\glamifylogo.jpeg" alt="Glamify Logo">
+            </div>
+            <!-- Search box -->
+            <div class="box">
+                <form name="search">
+                    <input type="text" class="input" placeholder="Search Items">
+                </form>
+                <i class="fa fa-search"></i>
+            </div>
+            <!-- Icons -->
+            <div id="icons">
+                <i class="fa fa-home"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-id-badge"></i>
+            </div>
+            <!-- Hamburger icon for mobile/tablet -->
+            <div id="hamburger" class="fa fa-bars"></div>
+        </div>
+        <!-- Dropdown Menu -->
+        <div id="dropdown-menu">
+            <a href="#"><i class="fa fa-home"></i> Home</a>
+            <a href="#"><i class="fa fa-shopping-cart"></i> Store</a>
+            <a href="#"><i class="fa fa-id-badge"></i> Profile</a>
+        </div>
+    </navbar>
+    
+    <!-- Hero Section -->
+    <!-- <section id="hero">
+        <div id="text">
+            <div id="heading">
+                <h1>HAIRCARE PRODUCTS</h1>
+            </div>
+            <div id="details">
+                <p>Available for both Men and Women</p>
+            </div>
+        </div>
+        <div id="images">
+            <div id="men">
+                <img src="men_style.jpeg" alt="Men's Haircare Products">
+                <p>Men</p>
+            </div>
+            <div id="women">
+                <img src="women_style.jpeg" alt="Women's Haircare Products">
+                <p>Women</p>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Products Section 
+    <section id="featured-products">
+        <h2>Featured Haircare Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="shampoo.jpeg"alt="Conditioner">
+                <h3>Nourishing Shampoo</h3>
+                <p>For silky and smooth hair</p>
+            </div>
+            <div class="product">
+                <img src="conditionr.jpeg"  alt="Shampoo">
+                <h3>Revitalizing Conditioner</h3>
+                <p>For deep hair conditioning</p>
+            </div>
+            <div class="product">
+                <img src="oil.jpeg" alt="Hair Oil">
+                <h3>Herbal Hair Oil</h3>
+                <p>Promotes healthy hair growth</p>
+            </div>
+        </div>
+    </section>
+     Testimonials Section 
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p>"Glamify's shampoo has transformed my hair! It's so soft and shiny now!"</p>
+                <span>- Priya M.</span>
+            </div>
+            <div class="testimonial">
+                <p>"The herbal hair oil works wonders. My hair feels healthier and stronger."</p>
+                <span>- Rohan S.</span>
+            </div>
+            <div class="testimonial">
+                <p>"Great products and excellent customer service. Highly recommend!"</p>
+                <span>Babar Azam.</span>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+        <h2>Latest from Our Blog</h2>
+        <div class="blog-grid">
+            <div class="blog-post">
+                <img src="oil.jpeg" alt="Haircare Tips">
+                <h3>5 Essential Haircare Tips</h3>
+                <p>Discover how to maintain healthy and shiny hair with these simple and effective tips...</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="hair.jpeg" alt="Product Review">
+                <h3>Our Best Hair Oil Reviewed</h3>
+                <p>Check out why this hair oil is a customer favorite and how it helps reduce hair fall...</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="styles.jpeg" alt="Styling Advice">
+                <h3>Top Hairstyles for 2024</h3>
+                <p>Want to stay trendy? Here are the top hairstyles for both men and women this year...</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>What products are best for my hair type?</h3>
+                <p>We offer a wide variety of products tailored for all hair types. You can explore the products based on your hair’s texture and requirements...</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long does delivery take?</h3>
+                <p>Orders are processed within 1-2 days and delivered within 3-5 business days, depending on your location...</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you offer any return or refund policies?</h3>
+                <p>Yes, we offer a 30-day return policy for unopened and unused products. Simply contact our support team to initiate a return...</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+             <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: support@glamify.com</p>
+                <p>Phone: +91-9876543210</p>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div> 
+        </div>
+    </section>
+     Newsletter Signup Section 
+     
+    <section id="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for exclusive offers and updates!</p>
+        <form id="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+     Footer Section 
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Help & FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 Glamify. All rights reserved.</p>
+    </footer> -->
+
+
+<!--------------SLIDESHOW--------------->
+<div class="slideshow-container">
+
+    <div class="mySlides ">
+      <div class="numbertext"></div>
+      <img style="background-image: contain;"src="C:\Users\navne\Downloads\beauty-skin-care-product-banner_33099-2057.avif" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="C:\Users\navne\Downloads\WhatsApp Image 2024-10-22 at 12.44.40.jpeg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="C:\Users\navne\Downloads\WhatsApp Image 2024-10-22 at 12.44.17 (1).jpeg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="C:\Users\navne\Downloads\WhatsApp Image 2024-10-22 at 12.44.18.jpeg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="C:\Users\navne\Downloads\WhatsApp Image 2024-10-22 at 12.44.17.jpeg" style="width:100%">
+      <div class="text"></div>
+    </div>
+  </div>
+  
+  <div style="text-align:center; background-color: #f8f9fa; padding:10px;">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+<!--------------------Bestseller---------------------------->
+ <div id="bestseller">
+   <h1 class="title">BESTSELLERS</h1>
+   <div  class="card-content">
+       <div class="card">
+           <div class="card-01">
+             <img src="C:\Users\navne\Downloads\WhatsApp Image 2024-10-22 at 12.44.40 (3).jpeg" alt="">
+             <h5>MATT AS HELL CRAYON LIPTICK</h5>
+             <h4>₹ 799</h4>
+             <button>SELECT SHADE</button>
+           </div>
+           <div class="card-01">
+            <img src="C:\Users\navne\Downloads\WhatsApp Image 2024-10-22 at 12.44.17 (2).jpeg" alt="">
+            <h5>KOHL OF HONOR Intense Kajal</h5>
+            <h4>₹ 249</h4>
+            <button>SELECT SHADE</button>
+          </div>
+          <div class="card-01">
+            <img src="C:\Users\navne\Downloads\WhatsApp Image 2024-10-22 at 12.44.40 (1).jpeg" alt="">
+            <h5>LIMITED EDITION MAKEUP TRIO SET</h5>
+            <h4> ₹ 699</h4>
+            <button>CHOOSE PRODUCTS</button>
+          </div>
+          <div class="card-01">
+            <img src="C:\Users\navne\Downloads\WhatsApp Image 2024-10-22 at 12.44.40 (2).jpeg" alt="">
+            <h5>Tipsy Lips Moisturizing Balm</h5>
+            <h4>₹ 199</h4>
+            <button>SELECT SHADE</button>
+          </div>
+       </div>
+   </div>
+
+   <!---------------------------------------------->
+
+
+
+<h1 class="title">What People Are Buying Right Now</h1>
+<div id="finalproduct">
+   <div>
+       <img src="https://static.thcdn.com/images/small/webp//productimg/480/480/13524404-5734930150395321.jpg" alt="">
+       <h4>Epionce Luminous Eye Serum 0.53ml</h4>
+      
+       <h4>$53.60</h4>
+       <button class="shopnow"><i class="fa fa-shopping-bag fa-2x"></i> SHOP NOW</button>
+   </div>
+   <div>
+       <img src="https://static.thcdn.com/images/small/webp//productimg/480/480/12596429-3594871019700125.jpg" alt="">
+       <h4>SkinMedica TNS Advanced+ Serum 1oz</h4>
+       
+       <h4>$265.50</h4>
+       <button class="shopnow"><i class="fa fa-shopping-bag fa-2x"></i> SHOP NOW</button>
+   </div>
+   <div>
+       <img src="https://static.thcdn.com/images/small/webp//productimg/480/480/13920999-1114993397470335.jpg" alt="">
+       <h4>Sunday Riley Morning Buzz Vitamin C </h4>
+       
+       <h4>$98</h4>
+       <button class="shopnow"><i class="fa fa-shopping-bag fa-2x"></i> SHOP NOW</button>
+   </div>
+   <div style="padding-top: 14px;">
+       <img src="https://static.thcdn.com/images/small/webp//productimg/480/480/12358556-1974888087906815.jpg" alt="">
+       <h4>TriPollar STOP X Device - Rose Gold</h4>
+     
+       <h4>$399.50</h4>
+       <button class="shopnow"><i class="fa fa-shopping-bag fa-2x"></i> SHOP NOW</button>
+   </div>
+</div>
+   <div class="categorye">
+       <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/26/180x72_4_233548301_CA_SS_Logo_Amend_BAU_THG0030424-041301-124116-063126.png" alt="">
+       <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/18/original-logo-1024x383-035229-063318.png" alt="">
+       <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/11/Revision_Skincare_Logo_without_Tag_Line-052511.png" alt="">
+       <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/46/original-NF_Skinstore_Banner_Logo_Color_320x140-01-011402-010546.png" alt="">
+       <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/27/220322-ELTAMD-LOGO-RGB-01-065127.png" alt="">
+       <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/07/original-LOGO-2022_SkinStore_Landing_Page-BLACK-060107.png" alt="">
+</div>
+<div id="tradingoffer">
+   <h1>Over On the Blog...</h1>
+   <div id="conbonof">
+       <div>
+           <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/06/original-SkinC_Ferulic-034413-012406.jpg" alt="">
+           <h4>SkinCeuticals: Vitamin C Beyond the Face</h4>
+           <p>SkinCeuticals believes in celebrating the skin-protective and rejuvenating powers of vitamin C every day, but this year they’re making sure your eyes and lips get in on the antioxidant action (and benefits).</p>
+           <button>READ MORE</button>
+       </div>
+       <div>
+           <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/51/original-0224-STDCRE-32153-SS-BME-Skinstore-March-2022-Photography-Batching-Shot_13-500x500-023351.jpg" alt="">
+           <h4>Which TriPollar Device is Right for You?</h4>
+           <p>In 2008, TriPollar launched themselves into the home beauty sphere with an aim to innovate the technology behind at-home treatments and devices.</p>
+           <button>READ MORE</button>
+       </div>
+       <div>
+           <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/16/original-NB-IMAGE-5---2022-SKINSTORE-LANDING-PAGE-025016.jpg" alt="">
+           <h4>Discover Natura Bissé</h4>
+           <p>PWith an aim to help their clients’ skin as they age and to turn their daily skin care routines into a moment of real self-care, Natura Bissé works to discover the latest scientific advancements and adapt them to the wellness industry.</p>
+           <button>READ MORE</button>
+       </div>
+       
+   </div>
+   <div class="banner"><img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/32/original-0308-STDCRE32346-SS-AH-SkinStore-Concierge-Banners-1180x200-084632.jpg" alt=""></div>
+</div>
+</div>
+<script>
+    var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+<script src="nav.js"></script>
+</body>
+</html>
