@@ -1,232 +1,149 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f4f4f9;
-    color: #333;
-}
-#navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: rgb(255, 255, 255); /* Semi-transparent white background */
-    backdrop-filter: blur(10px); /* Blur effect for the background */
-    border-radius: 10px; /* Optional: rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background color and shadow */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-/* Optional: Change the shadow on hover */
-#navbar:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+#nav {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  margin-top: -100px;
+
+
 }
 
-#navbar .nav-logo img {
-    width: 70px; /* Smaller logo size */
-    height: auto;
+img {
+  width: 100px;
+  height: 80px;
 }
 
-#navbar .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
+/* Add padding to containers */
+.container {
+  width: 40%;
+  padding: 16px;
+  background-color: white;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  background-color: transparent;
+  border-radius:20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+
+}
+.container h2{
+  font-size: 2rem;
+}
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }
 
-#navbar .nav-links li {
-    font-size: 1.2rem;
-    position: relative; /* For underline effect */
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
-#navbar .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+h3 {
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
-#navbar .nav-links a i {
-    margin-right: 0.5rem;
-    font-size: 1.2rem;
+#socialconnect {
+  width: 90%;
+  height: 100px;
+  padding: 20px;
+  display: block;
+  display: flex;
+  margin: auto;
+  /* border: 1px solid rebeccapurple;   */
+
 }
 
-#navbar .nav-links a:hover {
-    color: #ff4e50;
-    transform: translateY(-2px); /* Slight upward movement on hover */
+.facebook {
+  width: 48%;
+  height: 90%;
+  margin-left: 50px;
+  display: block;
+  display: flex;
 }
 
-/* Underline effect on hover */
-#navbar .nav-links li:hover::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5px; /* Positioning of underline */
-    height: 2px; /* Height of underline */
-    background-color: #ff4e50; /* Color of underline */
-    transition: width 0.3s ease;
-    width: 100%; /* Full width of underline */
+.fb {
+  width: 20%;
+  height: 30px;
+  margin-top: 14px;
+  margin-left: 20px;
 }
 
-/* Mobile Menu Icon */
-.hamburger {
-    display: none;
-    cursor: pointer;
+#ff {
+  color: gray;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
-.hamburger i {
-    font-size: 1.8rem;
-    color: #333;
+.google {
+  width: 48%;
+  height: 90%;
+  display: flex;
+  margin-right: 0px;
+
 }
 
-/* Dropdown Menu (Hidden by Default) */
-.mobile-dropdown {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for dropdown */
-    backdrop-filter: blur(10px); /* Blur effect for dropdown background */
-    border-radius: 5px;
-    overflow: hidden;
-    z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for dropdown */
+.go {
+  width: 25%;
+  height: 35px;
+  margin-top: 14px;
+
+  /* padding: 10px 0 0 20px; */
 }
 
-.mobile-dropdown ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+#gg {
+  color: gray;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
-.mobile-dropdown ul li {
-    padding: 10px;
-    border-bottom: 1px solid #f4f4f4;
-    transition: background-color 0.3s; /* Smooth background transition */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
 }
 
-.mobile-dropdown ul li:hover {
-    background-color: rgba(244, 244, 244, 0.5); /* Light background on hover */
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #2E3337;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
 
-.mobile-dropdown ul li a {
-    display: block;
-    color: #333;
-    text-decoration: none;
+.registerbtn:hover {
+  opacity: 1;
+  color: #000;
+  background-color: turquoise;
 }
 
-.mobile-dropdown ul li a:hover {
-    color: #ff4e50; /* Change text color on hover */
-}
-
-/* Mobile responsive design */
-@media (max-width: 768px) {
-    #navbar .nav-links {
-        display: none;
-    }
-
-    #navbar .hamburger {
-        display: block;
-    }
-
-    /* Show the dropdown when hamburger is clicked */
-    .mobile-dropdown.active {
-        display: block;
-    }
-}
-
-/* Sign Up Section Styles */
-#signup {
-    padding: 2.5rem 2rem;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blur effect for the background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-    margin: 2rem auto; /* Centering the sign-up section with margins */
-    max-width: 400px; /* Optional: max width for the form */
-}
-
-/* Heading */
-h2 {
-    margin-bottom: 1rem;
-    animation: fadeIn 1s; /* Fade-in animation for heading */
-}
-
-/* Sign Up Form Styles */
-.signup-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    animation: slideIn 1s; /* Slide-in animation for form */
-}
-
-.signup-form input {
-    padding: 0.8rem;
-    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border color */
-    border-radius: 5px;
-    width: 100%; /* Full width for responsive design */
-    max-width: 300px; /* Optional: max width for inputs */
-    transition: border-color 0.3s; /* Input border color transition */
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.signup-form input:focus {
-    border-color: #ff4e50; /* Change border color on focus */
-}
-
-.signup-form button {
-    padding: 0.8rem 1.2rem;
-    background-color: #ff4e50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.signup-form button:hover {
-    background-color: #e03e40;
+/* Add a blue text color to links */
+a {
+  color: rgb(88, 87, 87);
 }
 
 p {
-    margin-top: 1rem;
-}
-
-a {
-    color: #ff4e50;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  font-size: 20px;
 }

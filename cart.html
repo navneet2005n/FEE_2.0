@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +12,13 @@
 <body>
     <header>
         <div id="top">
-            <h3>Free delivery for orders above Rs. 799</h3>
-        </div>
+                    </div>
     </header>
 
     <navbar id="navbar">
         <div id="main">
             <div id="logo">
-                <img id="img" src="C:\Users\navne\OneDrive\Desktop\glamify_proj\glamifylogo.jpeg" alt="Glamify Logo">
+                <img id="img" src="" alt="Glamify Logo">
             </div>
             <div class="box">
                 <form name="search" onsubmit="return false;">
@@ -61,22 +59,17 @@
             <button class="cart-btn" onclick="checkout()">Checkout</button>
         </div>
     </div>
-
     <script>
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-        // Initialize cart items with a quantity of 1 if not set
         cart.forEach(item => {
             if (!item.quantity) {
                 item.quantity = 1;
             }
         });
-
         function displayCart() {
             const cartItemsContainer = document.getElementById('cart-items');
             const cartTotalElement = document.getElementById('cart-total');
             cartItemsContainer.innerHTML = '';
-
             if (cart.length === 0) {
                 cartItemsContainer.innerHTML = '<p class="empty-cart">Your cart is empty.</p>';
                 cartTotalElement.textContent = 'Total: Rs. 0';
